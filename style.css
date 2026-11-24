@@ -52,7 +52,16 @@ summary { min-height: 3rem; padding: .7rem 1rem; cursor: pointer; font-weight: 6
 summary::marker { color: var(--accent); }
 details[open] summary { color: var(--accent); }
 details p { padding: 0 1rem 1rem; color: var(--muted); max-width: 52rem; }
-.foot { color: var(--muted); border-top: 1px solid var(--border); padding-block: 1rem 2rem; }
+.foot { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; color: var(--muted); border-top: 1px solid var(--border); padding-block: 1rem 2rem; }
+.policy-intro { padding: clamp(1.25rem, 5vw, 3rem); background: linear-gradient(130deg, #174336, #26634c); color: white; border-radius: 1.5rem; }
+.policy-intro p { margin-top: .8rem; }
+.policy { max-width: 48rem; margin: 1rem auto 2rem; padding: clamp(1.15rem, 4vw, 2.35rem); border: 1px solid var(--border); background: var(--surface); border-radius: 1.25rem; }
+.policy section + section { margin-top: 1.5rem; }
+.policy h2 { font-size: 1.25rem; margin-bottom: .5rem; }
+.policy p + p { margin-top: .75rem; }
+.policy ul { margin: .55rem 0; padding-inline-start: 1.4rem; }
+.policy li + li { margin-top: .4rem; }
+.policy a { overflow-wrap: anywhere; }
 [id] { scroll-margin-top: 1rem; }
 
 @media (max-width: 44rem) {
